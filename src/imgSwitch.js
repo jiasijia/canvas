@@ -169,7 +169,7 @@
           if (Math.abs(p.dx - p.x) < 1 && Math.abs(p.dy - p.y) < 1) {
             p.x = p.dx;
             p.y = p.dy;
-            if (lastTime - thisTime > 1000) action = false;
+            //if (lastTime - thisTime > 1000) action = false;
           } else {
             p.x += (p.dx - p.x) * 0.2;
             p.y += (p.dy - p.y) * 0.2;
