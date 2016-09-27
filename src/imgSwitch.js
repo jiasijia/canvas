@@ -25,7 +25,7 @@
   var density = 20,
       speed = 1,
       pieces = [],
-      handle;
+      handle,left,top;
 
   var stats = new Stats();
       stats.setMode(0);
@@ -37,11 +37,6 @@
   var img = new Image();
 
   img.src = 'http://photocdn.sohu.com/20150707/mp21529935_1436237698252_2.jpeg';
-  //img.width = 800;
-  //img.height = 800;
-
-  var left = width/2 - img.width/2,
-      top = height/2 - img.height/2;
 
   function initVertical() {
     var index = 1;
@@ -207,6 +202,8 @@
   }
 
   img.onload = function() {
+    left = width/2 - img.width/2,
+    top = height/2 - img.height/2;
     initHorizontal();
     //initVertical();
     //initOutIn();
