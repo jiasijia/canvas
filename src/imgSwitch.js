@@ -36,7 +36,7 @@
 
   var img = new Image();
 
-  img.src = 'img/jing1.jpg';
+  img.src = 'http://photocdn.sohu.com/20150707/mp21529935_1436237698252_2.jpeg';
   //img.width = 800;
   //img.height = 800;
 
